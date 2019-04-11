@@ -1,0 +1,242 @@
+@charset "UTF-8";
+.head {
+  width: 100%;
+  height: 2.53333333rem;
+  background: #fff;
+  position: fixed;
+  z-index: 33;
+  overflow: hidden;
+}
+.head .headMenu {
+  width: 100%;
+  height: 1.14666667rem;
+  display: flex;
+  justify-content: space-between;
+}
+.head .headMenu .headback {
+  width: 1.33333333rem;
+  height: 100%;
+  background: url(../image/back.png) no-repeat center center;
+  background-size: 0.53333333rem;
+}
+.head .headMenu div {
+  width: 6.4rem;
+  height: 100%;
+  display: flex;
+}
+.head .headMenu div a {
+  width: 50%;
+  height: 100%;
+  font-size: 0.42666667rem;
+  text-align: center;
+  line-height: 1.14666667rem;
+  color: #333;
+}
+.head .headMenu div .classifyCard {
+  color: #EE5D58;
+}
+.head .headMenu .search {
+  width: 1.33333333rem;
+  height: 100%;
+  line-height: 1.06666667rem;
+  text-align: center;
+}
+.head .headMenu .search i {
+  width: 0.62666667rem;
+  height: 0.62666667rem;
+  background: url(../image/index-icon.png) no-repeat;
+  background-size: 3.8rem;
+  background-position: -2rem 0;
+}
+.brandMenu {
+  display: none;
+}
+.scrollMenu {
+  width: 100%;
+  height: 1.44rem;
+  overflow-x: scroll;
+  border-top: 1px solid rgba(180, 180, 180, 0.8);
+  box-sizing: border-box;
+}
+.scrollMenu .menuContain {
+  height: 100%;
+  width: 13.33333333rem;
+}
+.scrollMenu .menuContain a {
+  width: 2.66666667rem;
+  height: 1.33333333rem;
+  float: left;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scrollMenu .menuContain a span {
+  color: #666;
+  position: absolute;
+  font-size: 0.37333333rem;
+  height: 0.53333333rem;
+  box-sizing: border-box;
+}
+.scrollMenu .menuContain a .active {
+  color: #ee5d58;
+  border-bottom: 2px solid #ee5d58;
+}
+.classifyPage {
+  padding-top: 2.53333333rem;
+}
+.classifyPage .classifyPublicPage {
+  width: 100%;
+  display: none;
+}
+.classifyPage .classifyPublicPage .card {
+  width: 100%;
+  position: relative;
+  background: #fff;
+}
+.classifyPage .classifyPublicPage .card .title {
+  width: 100%;
+  height: 2.93333333rem;
+  position: relative;
+}
+.classifyPage .classifyPublicPage .card .title .bgcover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(49, 44, 44, 0.2);
+}
+.classifyPage .classifyPublicPage .card .title img {
+  width: 100%;
+}
+.classifyPage .classifyPublicPage .card .title a {
+  position: absolute;
+  width: 100%;
+  height: 2.93333333rem;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.classifyPage .classifyPublicPage .card .title a div {
+  background: #fff;
+  display: flex;
+  padding: 0.13333333rem;
+}
+.classifyPage .classifyPublicPage .card .title a div span {
+  color: #666;
+  width: 0.73333333rem;
+  font-size: 0.42666667rem;
+  text-align: center;
+  border-left: 1px solid #969696;
+  border-right: 1px solid #969696;
+}
+.classifyPage .classifyPublicPage .card .title p {
+  position: absolute;
+  font-size: 0.32rem;
+  color: #fff;
+  right: 0.26666667rem;
+  bottom: 0.26666667rem;
+}
+.classifyPage .classifyPublicPage .card ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 0.26666667rem;
+  margin-bottom: 0.26666667rem;
+}
+.classifyPage .classifyPublicPage .card ul li {
+  width: 25%;
+  height: 2.18666667rem;
+  position: relative;
+}
+.classifyPage .classifyPublicPage .card ul li a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.classifyPage .classifyPublicPage .card ul li a img {
+  width: 1.36rem;
+}
+.classifyPage .classifyPublicPage .card ul li a span {
+  font-size: 0.32rem;
+  color: #666;
+}
+.classifyPage .classifyPublicPage:first-child {
+  display: block;
+}
+.brandPage {
+  display: none;
+}
+.brandPage .card {
+  width: 100%;
+}
+.brandPage .card .tag {
+  padding-top: 2.53333333rem;
+  width: 100%;
+  height: 1.06666667rem;
+  text-align: center;
+  font-size: 0.37333333rem;
+}
+.brandPage .card .tag span {
+  width: 100%;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  background: #F4F4F4;
+  color: #666;
+}
+.brandPage .card ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.brandPage .card ul li {
+  width: 33.3%;
+  height: 3.2rem;
+  border-bottom: 1px solid rgba(180, 180, 180, 0.8);
+  border-right: 1px solid rgba(180, 180, 180, 0.8);
+  box-sizing: border-box;
+}
+.brandPage .card ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.brandPage .card ul li a .image {
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.brandPage .card ul li a .image img {
+  max-width: 1.33333333rem;
+}
+.brandPage .card ul li a span {
+  height: 0.90666667rem;
+  font-size: 0.32rem;
+  color: #666;
+  width: 90%;
+  margin-top: 0.13333333rem;
+  text-align: center;
+}
+.allBrand {
+  position: fixed;
+  width: 0.8rem;
+  height: 0.8rem;
+  text-align: center;
+  line-height: 0.8rem;
+  color: #fff;
+  display: none;
+  font-size: 0.32rem;
+  bottom: 1.6rem;
+  right: 0.26666667rem;
+  background: #EE5D58;
+  transition: all linear 0.3s;
+}

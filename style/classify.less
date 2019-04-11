@@ -1,0 +1,269 @@
+@charset "UTF-8";
+@num:37.5rem;
+
+.head{
+	width: 100%;
+	height: 95/@num;
+	background: #fff;
+	position: fixed;
+	z-index: 33;
+	overflow: hidden;
+
+	.headMenu{
+		width: 100%;
+		height: 43/@num;
+		display: flex;
+		justify-content: space-between;
+
+		.headback{
+			width: 50/@num;
+			height: 100%;
+			background: url(../image/back.png) no-repeat center center;
+			background-size: 20/@num;
+		}
+		div{
+			width: 240/@num;
+			height: 100%;
+			display: flex;
+			
+			a{
+				width: 50%;
+				height: 100%;
+				font-size: 16/@num;
+				text-align: center;
+				line-height: 43/@num;
+				color: #333;
+			}
+			.classifyCard{
+				color: #EE5D58;
+			}
+		}
+		.search{
+			width: 50/@num;
+			height: 100%;
+			line-height: 40/@num;
+			text-align: center;
+			i{
+				width: 23.5/@num;
+				height: 23.5/@num;
+				background: url(../image/index-icon.png) no-repeat ;
+				background-size: 3.8rem;
+				background-position: -2rem 0;
+			}
+		}
+	}
+}
+.brandMenu{
+	display: none;
+}
+.scrollMenu{
+	width: 100%;
+	height: 54/@num;
+	overflow-x: scroll;
+	border-top: 1px solid rgba(180,180,180,0.8);
+	box-sizing: border-box;
+
+
+	.menuContain{
+		height: 100%;
+		width: 500/@num;
+
+		a{
+			width: 100/@num;
+			height: 50/@num;
+			float: left;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items:center;
+			span{
+				color: #666;
+				position: absolute;
+				font-size: 14/@num;
+				height: 20/@num;
+				box-sizing: border-box;
+			}
+			.active{
+				color: rgb(238, 93, 88);
+				border-bottom: 2px solid rgb(238, 93, 88);
+			}
+		}
+	}
+}
+
+.classifyPage{
+	padding-top: 95/@num;
+
+	.classifyPublicPage{
+		width: 100%;
+		display: none;
+
+		.card{
+			width: 100%;
+			position: relative;
+			background: #fff;
+
+			.title{
+				width: 100%;
+				height: 110/@num;
+				position: relative;
+				.bgcover{
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					background: rgba(49, 44, 44, 0.2);
+				}
+				img{
+					width: 100%;
+				}
+				a{
+					position: absolute;
+					width: 100%;
+					height: 110/@num;
+					top: 0px;
+					display: flex;
+					justify-content: center;
+					align-items:center;
+
+					div{
+						background: #fff;
+						display: flex;
+						padding: 5/@num;
+						span{
+							color: #666;
+							width: 27.5/@num;
+							font-size: 16/@num;
+							text-align: center;
+							border-left: 1px solid rgba(150,150,150,1);
+							border-right: 1px solid rgba(150,150,150,1);
+						}
+					}
+				}
+				p{
+					position: absolute;
+					font-size: 12/@num;
+					color: #fff;
+					right: 10/@num;
+					bottom: 10/@num;
+				}
+			}
+			
+
+			ul{
+				display: flex;
+				flex-wrap:wrap;
+				width: 100%;
+				margin-top: 10/@num;
+				margin-bottom: 10/@num;
+
+				li{
+					width: 25%;
+					height: 82/@num;
+					position: relative;
+					a{
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						display: flex;
+						flex-direction:column;
+						justify-content: center;
+						align-items:center;
+
+						img{
+							width: 51/@num;
+						}
+						span{
+							font-size: 12/@num;
+							color: #666;
+						}
+					}
+				}
+			}
+		}
+	}
+	.classifyPublicPage:first-child{
+		display: block;
+	}
+}
+
+.brandPage{
+	display: none;
+	
+	.card{
+		width: 100%;
+		
+		.tag{
+			padding-top: 95/@num;
+			width: 100%;
+			height: 40/@num;
+			text-align: center;
+			font-size: 14/@num;
+
+			span{
+				width: 100%;
+				height: 40/@num;
+				line-height: 40/@num;
+				background: #F4F4F4;
+				color: #666;
+			}
+		}
+		ul{
+			width: 100%;
+			display: flex;
+			flex-wrap:wrap;
+
+
+			li{
+				width: 33.3%;
+				height: 120/@num;
+				border-bottom: 1px solid rgba(180,180,180,0.8);
+				border-right: 1px solid rgba(180,180,180,0.8);
+				box-sizing: border-box;
+
+				a{
+					width: 100%;
+					height: 100%;
+					display: flex;
+					flex-direction:column;
+					justify-content: center;
+					align-items:center;
+					
+					.image{
+						width: 50/@num;
+						height: 50/@num;
+						text-align: center;
+						display: flex;
+						align-items:center;
+						img{
+							max-width: 50/@num;
+						}
+					}
+					
+					span{
+						height: 34/@num;
+						font-size: 12/@num;
+						color: #666;
+						width: 90%;
+						margin-top: 5/@num;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+.allBrand{
+	position: fixed;
+	width: 30/@num;
+	height: 30/@num;
+	text-align: center;
+	line-height: 30/@num;
+	color: #fff;
+	display: none;
+	font-size: 12/@num;
+	bottom: 60/@num;
+	right: 10/@num;
+	background: #EE5D58;
+	transition:all linear 0.3s;
+}

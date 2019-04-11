@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>商品详情</title>
+	<link rel="shortcut Icon" type="image/x-ico" href="https://3g.baobeigezi.com/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style/public.css">
+	<link rel="stylesheet" type="text/css" href="style/prodetail.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/swiper.min.css">
+	<script type="text/javascript" src="js/public.js"></script>
+	<script type="text/javascript" src="https://static01.baocdn.com/h5/js/3.2/lib/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+	<header class="head">
+		<a href="javascript:history.go(-1);" class="back"></a>
+		<span>商品详情</span>
+		<a href="javascript:;" class="share">
+			<i></i>
+		</a>
+	</header>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide stop-swiping">
+				<img class="swiperImg" src="https://image.baoimg.net/photo/201709/201709299002775951374_250x250.jpg">
+			</div>
+			<div class="swiper-slide stop-swiping">
+				<img class="swiperImg" src="https://image.baoimg.net/photo/201709/201709299002775951374_250x250.jpg">
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<div class="proDescriper">
+		<div class="container">
+			<div class="word">
+				<strong>Kao花王</strong>
+				<p>【包邮包税】日本Merries花王 尿不湿NB60片
+				</p>
+				<span>数量有限，先到先得</span>
+			</div>
+			<div class="price">
+				<p class="newPrice">￥99.00</p>
+				<p class="oldPrice">参考价:￥109.00 &nbsp;省:￥10.00</p>
+			</div>
+		</div>
+	</div>
+	<div class="nationMsg">
+		<img src="https://image.baoimg.net/da/201704/2017041015001290884338.png">
+		<span>保税</span>
+	</div>
+	<div class="choiceProNum">
+		<div class="choiceDetail">
+			<div class="img-price">
+				<div class="image">
+					<img src="https://image.baoimg.net/photo/201612/2016122216001360571177_400x400.jpg"
+						class="littleProImg">
+				</div>
+				<span class="price">￥1345.00</span>
+				<i class="close"></i>
+			</div>
+			<div class="number">
+				<span class="word">数量</span>
+				<div class="reduce-add">
+					<span class="reduce">-</span>
+					<span class="proNum">1</span>
+					<span class="add">+</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="footer-buy">
+		<div class="btimg">
+			<a href="shopCart.html" class="toshopCart">
+				<img src="https://static01.baocdn.com/h5/img/20180319/Shoppingcart@3x.png">
+				<span class="allProNum">0</span>
+			</a>
+			<a href="###">
+				<img src="https://static01.baocdn.com/h5/img/20180319/kefu.png">
+			</a>
+			<a href="###">
+				<img src="https://static01.baocdn.com/h5/img/20180319/Like5@3x.png">
+			</a>
+		</div>
+		<div class="btword">
+			<a href="javascript:;" class="addToCart">加入购物车</a>
+			<a href="javascript:;" class="buyNow">立即购买</a>
+		</div>
+	</section>
+
+</body>
+<script type="text/javascript" src="dist/js/swiper.min.js"></script>
+<script type="text/javascript">
+	var isOnlyOne = false;
+	isOnlyOne = $(".swiper-slide").size() == 1 ? true : false;
+	if (isOnlyOne) {
+		$(".swiper-pagination")[0].style.display = "none";
+	} else {
+		$(".swiper-pagination")[0].style.display = "block";
+	}
+	var mySwiper = new Swiper('.swiper-container', {
+		pagination: {
+			el: '.swiper-pagination',
+		},
+		noSwiping: isOnlyOne,
+		noSwipingClass: 'stop-swiping',
+	})
+</script>
+<script type="text/javascript">
+	var swiperImg = $(".swiperImg")[0];
+	var imgSrc = swiperImg.currentSrc;
+
+	function creatNewImg(imgSrc) {
+		return newSrc = imgSrc.split("_")[0] + ".jpg@!400x400";
+	}
+	swiperImg.src = creatNewImg(imgSrc);
+</script>
+
+</html>

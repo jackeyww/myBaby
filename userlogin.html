@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录-宝贝格子</title>
+	<link rel="stylesheet" type="text/css" href="style/userlogin.css">
+	<link rel="stylesheet" type="text/css" href="style/public.css">
+	<link rel="shortcut Icon" type="image/x-ico" href="https://3g.baobeigezi.com/favicon.ico">
+	<script type="text/javascript" src="js/public.js"></script>
+</head>
+<body>
+	<a href="javascript:history.go(-1);" class="quit"></a>
+	<div class="wrapAll">
+		<p class="title">快速登录</p>
+		<div class="list">
+			<input type="text" placeholder="请输入您的手机号" name="phone"></input>
+		</div>
+		<div class="list">
+			<input type="text" placeholder="请输入图片验证码" name="imgCode"></input>
+			<span>
+				<img src="https://3g.baobeigezi.com/user/getLoginImageCode">
+			</span>
+		</div>
+		<div class="list">
+			<input type="text" placeholder="请输入短信验证码" name="messageCode"></input>
+			<span>发送验证码</span>
+		</div>
+		<div class="tips">
+			<p>收不到验证码？使用<i></i><a href="javascript:;">免费语音获取</a></p>
+		</div>
+		<a href="user.html" class="login">登录</a>
+		<div class="loginfaild">
+			<p>无法登录，<a href="###">请联系在线客服</a></p>
+		</div>
+	</div>
+</body>
+</html>
